@@ -34,13 +34,16 @@ class PurchaseTestCase(TestCase):
         self.datetime = datetime.now()
         Purchase.objects.create(product=self.product_book,
                                 person="Ivanov",
-                                address="Svetlaya St.")
+                                address="Svetlaya St.",
+                                count="10")
 
     def test_correctness_types(self):
         self.assertIsInstance(Purchase.objects.get(
             product=self.product_book).person, str)
         self.assertIsInstance(Purchase.objects.get(
             product=self.product_book).address, str)
+        self.assertIsInstance(Purchase.objects.get(
+            product=self.product_book).date, datetime)
         self.assertIsInstance(Purchase.objects.get(
             product=self.product_book).date, datetime)
 
