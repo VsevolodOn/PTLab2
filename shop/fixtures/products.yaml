@@ -3,13 +3,28 @@
   fields:
     name: Стол
     price: 2000
+    count: 12
 - model: shop.product
   pk: 2
   fields:
     name: Стул
     price: 1000
+    count: 12
 - model: shop.product
   pk: 3
   fields:
-    name: Табурет
+    name: Растение
     price: 500
+    count: 12
+- model: shop.product
+  pk: 3
+  fields:
+    name: Бутылка
+    price: 200
+    count: 12
+- model: shop.product
+  pk: 3
+  fields:
+    name: Лейка
+    price: 200
+    count: 12
