@@ -17,13 +17,13 @@
     price: 500
     count: 12
 - model: shop.product
-  pk: 3
+  pk: 4
   fields:
     name: Бутылка
     price: 200
     count: 12
 - model: shop.product
-  pk: 3
+  pk: 5
   fields:
     name: Лейка
     price: 200
