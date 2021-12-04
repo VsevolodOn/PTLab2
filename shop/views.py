@@ -7,18 +7,19 @@ from .models import Product, Purchase
 
 
 def index(request):
+    update_price()
+    products = Product.objects.all()
+    context = {'products': products}
+    return render(request, 'shop/index.html', context)
 
+
+def update_price():
     prod_less = Product.objects.filter(count_now__lt=F('count')/2)
-
     if len(prod_less) != 0:
         for prod in prod_less:
             prod.price = prod.price*1.2
             prod.count = prod.count_now
             prod.save()
-    products = Product.objects.all()
-    context = {'products': products}
-
-    return render(request, 'shop/index.html', context)
 
 
 class PurchaseCreate(CreateView):
