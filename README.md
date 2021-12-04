@@ -35,7 +35,7 @@
 ![image](https://user-images.githubusercontent.com/92991750/144700451-4ecf0ab2-84b1-45dc-b5d2-4e6a9ff249de.png)
 
 
-**Изменение цены**
+**Изменение цены:**
 
 ![image](https://user-images.githubusercontent.com/92991750/144700463-fdd1b838-835d-4637-831f-976ee64752fa.png)
 
